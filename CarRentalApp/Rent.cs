@@ -46,7 +46,8 @@ namespace CarRentalApp
         }
 
         private void add_rent_Click(object sender, EventArgs e)
-        //Costomer save and vehicle save
+        
+        //Add new Rent data
         {
             Con.Open();
             SqlCommand cmd = new SqlCommand("insert into Rent values(@CustomerNum,@CustomerName,@VehicleNum, @VehicleType, @Duration, @Cost)", Con);
