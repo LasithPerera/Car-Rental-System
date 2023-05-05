@@ -72,7 +72,7 @@ namespace CarRentalApp
             Con.Close();
             MessageBox.Show("Deleted Successfully");
         }
-        //When the buttont clink on function is used to rent a car
+        //When the buttont clink on function is used to show all Rent data
         private void view_btn_Click(object sender, EventArgs e)
         {
             Con.Open();
