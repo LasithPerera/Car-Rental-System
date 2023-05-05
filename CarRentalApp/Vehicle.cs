@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualBasic.ApplicationServices;
+using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,9 +19,10 @@ namespace CarRentalApp
         {
             InitializeComponent();
         }
+        //Connect to vehicle database
         SqlConnection Con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=E:\\ved\\CarRentalApp\\CarDataBase.mdf;Integrated Security=True;Connect Timeout=30");
 
-
+        //Add new vehicle data
         private void ADD_Click(object sender, EventArgs e)
         {
             Con.Open();
@@ -40,6 +41,7 @@ namespace CarRentalApp
 
         }
 
+        //Navigate to Home window
         private void button1_Click(object sender, EventArgs e)
         {
             Home home = new Home();
@@ -47,6 +49,7 @@ namespace CarRentalApp
             this.Hide();
         }
 
+        //Show all vehicle data
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             Con.Open();
@@ -58,6 +61,7 @@ namespace CarRentalApp
             Con.Close();
         }
 
+        //Delete vehicle data
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             Con.Open();
