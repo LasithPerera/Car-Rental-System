@@ -61,7 +61,8 @@ namespace CarRentalApp
             MessageBox.Show("Rent Sucessfully added");
             Con.Close();
         }
-        //This method used to delete rent customer number when the parameter is equal to con
+        
+        //Delete Rent data
         private void delete_btn_Click(object sender, EventArgs e)
         {
             Con.Open();
