@@ -72,6 +72,7 @@ namespace CarRentalApp
             Con.Close();
             MessageBox.Show("Deleted Successfully");
         }
+        
         //When the buttont clink on function is used to show all Rent data
         private void view_btn_Click(object sender, EventArgs e)
         {
@@ -84,6 +85,7 @@ namespace CarRentalApp
             Con.Close();
         }
 
+        //Navigate to Home Page
         private void button1_Click(object sender, EventArgs e)
         {
             Home home = new Home();
