@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualBasic.ApplicationServices;
+using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,6 +46,7 @@ namespace CarRentalApp
         }
 
         private void add_rent_Click(object sender, EventArgs e)
+        //Costomer save and vehicle save
         {
             Con.Open();
             SqlCommand cmd = new SqlCommand("insert into Rent values(@CustomerNum,@CustomerName,@VehicleNum, @VehicleType, @Duration, @Cost)", Con);
@@ -59,7 +60,7 @@ namespace CarRentalApp
             MessageBox.Show("Rent Sucessfully added");
             Con.Close();
         }
-
+        //This method used to delete rent customer number when the parameter is equal to con
         private void delete_btn_Click(object sender, EventArgs e)
         {
             Con.Open();
@@ -69,7 +70,7 @@ namespace CarRentalApp
             Con.Close();
             MessageBox.Show("Deleted Successfully");
         }
-
+        //When the buttont clink on function is used to rent a car
         private void view_btn_Click(object sender, EventArgs e)
         {
             Con.Open();
