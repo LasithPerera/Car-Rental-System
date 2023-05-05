@@ -1,4 +1,4 @@
-﻿using CarRentalApp;
+using CarRentalApp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -39,7 +39,7 @@ namespace CarRentalApp
         }
 
 
-        //user button
+        //Navigate to User Window
         private void button5_Click(object sender, EventArgs e)
         {
             User user = new User();
@@ -48,6 +48,7 @@ namespace CarRentalApp
 
         }
 
+        //Navigate to Login window
         private void button2_Click(object sender, EventArgs e)
         {
             Login lg = new Login();
@@ -55,6 +56,7 @@ namespace CarRentalApp
             this.Hide();
         }
 
+        //Navigate to Rent Window
         private void button3_Click(object sender, EventArgs e)
         {
             Rent rent = new Rent();
@@ -62,6 +64,7 @@ namespace CarRentalApp
             this.Hide();
         }
 
+        //Navigate to vehicle window
         private void button1_Click(object sender, EventArgs e)
         {
             Vehicle vehicle = new Vehicle();
@@ -69,6 +72,7 @@ namespace CarRentalApp
             this.Hide();
         }
 
+        //Navigate to welcome window
         private void button6_Click(object sender, EventArgs e)
         {
             Welcome welcome = new Welcome();
